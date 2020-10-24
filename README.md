@@ -44,6 +44,10 @@ Follow these guidelines for committing:
 
 * Deploy this site to GitHub Pages using the [Create React App docs for deployment.](https://create-react-app.dev/docs/deployment/#github-pages)
 
+## USE
+- clone repo 
+- npm i
+- npm run start
 
 ## Submission on BCS
 
