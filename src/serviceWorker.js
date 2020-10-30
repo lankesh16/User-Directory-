@@ -16,26 +16,26 @@ export function register(config) {
     const publicUrl = new URL(process.env.PUBLIC_URL, window.location.href);
     if (publicUrl.origin !== window.location.origin) {
      
-      return;
+  return;
     }
 
     window.addEventListener('load', () => {
       const swUrl = `${process.env.PUBLIC_URL}/service-worker.js`;
 
-      if (isLocalhost) {
+  if (isLocalhost) {
       
         checkValidServiceWorker(swUrl, config);
 
         
-        navigator.serviceWorker.ready.then(() => {
-          console.log(
+    navigator.serviceWorker.ready.then(() => {
+    console.log(
             'This web app is being served cache-first by a service ' +
               'worker.'
           );
         });
       } else {
         
-        registerValidSW(swUrl, config);
+  registerValidSW(swUrl, config);
       }
     });
   }
@@ -45,7 +45,7 @@ function registerValidSW(swUrl, config) {
   navigator.serviceWorker
     .register(swUrl)
     .then(registration => {
-      registration.onupdatefound = () => {
+  registration.onupdatefound = () => {
         const installingWorker = registration.installing;
         if (installingWorker == null) {
           return;
@@ -54,30 +54,30 @@ function registerValidSW(swUrl, config) {
           if (installingWorker.state === 'installed') {
             if (navigator.serviceWorker.controller) {
            
-              console.log(
-                'New content is available and will be used when all ' +
-                  'tabs for this page are closed.'
+    console.log(
+                'New content is available' +
+                  'tabs r unable to rendder'
               );
 
               
-              if (config && config.onUpdate) {
+     if (config && config.onUpdate) {
                 config.onUpdate(registration);
               }
             } else {
               
-              console.log('Content is cached for offline use.');
+              console.log('Content is cached');
 
               
               if (config && config.onSuccess) {
                 config.onSuccess(registration);
               }
-            }
-          }
+      }
+    }
         };
       };
     })
     .catch(error => {
-      console.error('Error during service worker registration:', error);
+  console.error('Error', error);
     });
 }
 
@@ -91,11 +91,11 @@ function checkValidServiceWorker(swUrl, config) {
       const contentType = response.headers.get('content-type');
       if (
         response.status === 404 ||
-        (contentType != null && contentType.indexOf('javascript') === -1)
+   (contentType != null && contentType.indexOf('javascript') === -1)
       ) {
         
         navigator.serviceWorker.ready.then(registration => {
-          registration.unregister().then(() => {
+     registration.unregister().then(() => {
             window.location.reload();
           });
         });
@@ -106,7 +106,7 @@ function checkValidServiceWorker(swUrl, config) {
     })
     .catch(() => {
       console.log(
-        'No internet connection found. App is running in offline mode.'
+     'No internet'
       );
     });
 }

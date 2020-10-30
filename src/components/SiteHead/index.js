@@ -1,16 +1,16 @@
 import React from "react";
-import "./style.css";
+import "../css/style4.css";
 
 function SiteHead() {
     return (
 <div className = "wrapper">
     <div className = "title">
-Employee Directory
-    </div>
-    <br></br>
-    <div className = "tagline">
-Employee Profiles
-    </div>
+Employee Directorys 
+</div>
+    
+ <div className = "tagline">
+Employee Profiles Bellow
+</div>
 </div>
 
     );

@@ -1,0 +1,11 @@
+.header {
+    display: grid;
+    grid-template-columns: 23% 22% 5% 5% 16% 35%;
+    grid-template-rows: 32px;
+    grid-gap: 1px;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgb(236, 158, 188);
+    
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css";
+import "../css/style2.css";
 import Card from '../Card';
 
 class ListHeader extends React.Component {
@@ -88,12 +88,12 @@ class ListHeader extends React.Component {
 
             <div>
                 <div className="header">
-                    <div>Photo</div>
-                    <div><p onClick={this.sortName} className="name">Name</p> </div>
-                    <div>Gender</div>
-                    <div><p onClick={this.sortAge} className="age">Age</p></div>
-                    <div>Phone</div>
-                    <div>E-mail</div>
+                    <div>Photos</div>
+                    <div><p onClick={this.sortname} className="name">names</p> </div>
+                    <div>Genders</div>
+                    <div><p className="age">ages</p></div>
+                    <div>Phones</div>
+                    <div>E-mails</div>
                 </div>
 
                 {

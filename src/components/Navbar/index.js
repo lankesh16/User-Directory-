@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css";
+
 import ListHeader from '../ListHeader';
 
 class Navbar extends React.Component {

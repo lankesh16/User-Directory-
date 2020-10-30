@@ -1,5 +1,5 @@
 .wrapper {
-    height: 200px;
+    height: 100px;
     background-color: rgb(235, 217, 160);
     display: flex;
     align-items: center;
@@ -12,14 +12,8 @@
 }
 
 .title {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Courier New', Courier, monospace;
     font-size: xx-large;
-    font-weight: bolder;
+    font-weight: bold;
 
-}
-
-.tagline {
-
-font-size: large;
-font-weight: bold;
 }
